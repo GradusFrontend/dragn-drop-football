@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(210, 85, 85);
+    /* width: 100vw;
+    height: 100vh; */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area {
+    background-color: rgb(4, 179, 4);
+    height: 90vh;
+    width: 95vw;
+    position: relative;
+}
+
+.left_gate {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    height: 300px;
+    width: 150px;
+    border: 5px solid #fff;
+    border-left: 0;
+}
+.right_gate {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 0 -50%;
+    height: 300px;
+    width: 150px;
+    border: 5px solid #fff;
+    border-right: 0;
+}
+
+.left_triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    border: 3px solid blue;
+    border-left: 0;
+
+}
+.right_triangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    border: 3px solid blue;
+    border-right: 0;
+}
+
+.top_out {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    border: 3px solid rgb(0, 255, 195);
+}
+.bottom_out {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    border: 3px solid rgb(0, 255, 195);
+}
+
+.ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: url(./soccer-ball.png) no-repeat center / cover;
+    cursor: grab;
+}
+
+.ball:active {
+    cursor: grabbing;
+}
+
+.scores {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    translate: -50% 0;
+    font-family: monospace;
+    color: #fff;
+    font-size: 27px;
+}
